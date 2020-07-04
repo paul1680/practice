@@ -10,3 +10,93 @@ p{
     color: brown;
     background-color: cornflowerblue;
 }
+.hover:hover{
+    color: goldenrod;
+    font-size: 40px;
+    background-color: gray;
+}
+input:focus{
+    font-size: 30px;
+    color:red;
+}
+a:visited{
+    color: hotpink;
+}
+.field {
+    position: relative;
+
+    margin: 160px;
+
+}
+.hover{
+    border-width:20px 1px 5px 20px;
+    height: 200px;
+}
+@keyframes anim{
+    0%{
+        top: -60px;
+    left: 384px;
+    }
+    25%{
+        top: 0px;
+    left: 190px;
+    }
+    75%{
+       top:-60px;
+        left: 84px;
+    }
+    100%{
+        top: -200px;
+        left: 600px;
+    }
+}
+
+.bat {
+    width: 25px;
+    height: 80px;
+    border-radius: 5px 2px;
+    background-color: #eee;
+    box-shadow: 2px 2px 2px #ccc, -2px -2px 2px #888;
+    position: relative;
+
+    transition: transform 1s ease-in-out;
+     transition-delay: 1.4s
+}
+
+
+
+.field:hover .bat{
+    transform: rotate(-60deg);
+    transform-origin: 100% 0%;
+
+}
+
+
+#idd {
+    position: relative;
+    width: 7px;
+    height: 45px;
+    background-color: burlywood;
+    border-radius: 20px;
+    top: -30px;
+    left: 9px;
+}
+
+.ball {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+     
+     
+    position: relative;
+    top: -60px;
+    left: 384px;
+    
+    
+}
+
+.field:hover .ball {
+     animation: anim 3s linear 1 normal;
+    animation-fill-mode: forwards;
+}
